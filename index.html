@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="logo">Basket</div>
+        <div class="cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            (<span id="cart-count">0</span>)
+            <div id="dropdown-cart">
+                <div id="cart-items">
+
+                </div>
+                <div class="cart-total">
+                    Toplam - <span id="total-price">0</span>
+                </div>
+                <button id="delete-all">Delete All</button>
+                <button id="go-to-checkout">Checkout</button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="products">
+        <div class="card" data-id="1">
+            <img src="https://group.mercedes-benz.com/bilder/produkte/pkw/mercedes-benz/g-klasse-w1920xh1080-cutout.jpg"
+                alt="Bmw">
+            <h3>Mercedes-benz Ag</h3>
+            <p>$100000</p>
+            <button class="add-to-cart">Add to cart</button>
+            <a style="margin-left: 5px;font-size: 25px;cursor: pointer; position: absolute;" class="add-to-wishlist"><i
+                    style="color: red;" class="fa-solid fa-heart"></i></a>
+        </div>
+        <div class="card" data-id="2">
+            <img src="https://group.mercedes-benz.com/bilder/unternehmen/tradition/geschichte/highlights-2012-2019/2016/e-klasse-2016-w1920xh1080-cutout.jpg"
+                alt="Mercedes">
+            <h3>Mercedes electric</h3>
+            <p>$80000</p>
+            <button class="add-to-cart">Add to cart</button>
+            <a style="margin-left: 5px;font-size: 25px;cursor: pointer; position: absolute;" class="add-to-wishlist"><i
+                    style="color: red;" class="fa-solid fa-heart"></i></a>
+        </div>
+        <div class="card" data-id="3">
+            <img src="https://group.mercedes-benz.com/bilder/produkte/pkw/mercedes-benz/a-klasse/a-klasse-w1920xh1080-cutout.jpg"
+                alt="Mercedes">
+            <h3>Mercedes</h3>
+            <p>$65000</p>
+            <button class="add-to-cart">Add to cart</button>
+            <a style="margin-left: 5px;font-size: 25px;cursor: pointer; position: absolute;" class="add-to-wishlist"><i
+                    style="color: red;" class="fa-solid fa-heart"></i></a>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
